@@ -47,4 +47,9 @@ regressor = LinearRegression()
 regressor.fit(X_train, y_train)
 
 # Predicting the Test Set results
+y_pred = regressor.predict(X_test) # Create the vector of predictions
 
+# y_test is the vector containing the real profits
+# y_pred is the vector containing the profits predicted by the model
+
+# Building the optimal model using Backward Elimination
