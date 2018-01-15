@@ -8,6 +8,8 @@ Created on Sat Jan 13 17:45:46 2018
 
 # Multi Linear Regression
 
+# Formula: B.0*x.0 + B.1*x.1 + B.2*x.2 + ...
+
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
@@ -53,3 +55,15 @@ y_pred = regressor.predict(X_test) # Create the vector of predictions
 # y_pred is the vector containing the profits predicted by the model
 
 # Building the optimal model using Backward Elimination
+import statsmodels.formula.api as sm
+X = np.append(arr = np.ones((50,1)).astype(int), values = X, axis = 1) # Adding first column is need by the stats library
+
+# Create new matrix of features which will be the optimal matrix of features
+X_opt = X[:, [0,1,2,3,4,5]]
+
+# Must create a new regressor which will be a new object from the stats library
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+
+# X_opt initialized 
+
+
