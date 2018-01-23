@@ -64,6 +64,27 @@ X_opt = X[:, [0,1,2,3,4,5]]
 # Must create a new regressor which will be a new object from the stats library
 regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
 
-# X_opt initialized 
+# Step three: Determine p-values
+regressor_OLS.summary()
 
+# To complete Backwards Elimination repeat the previous three steps
 
+# Refit model with new Independent Variables
+X_opt = X[:, [0,1,3,4,5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+
+# Refit model with new Independent Variables
+X_opt = X[:, [0,3,4,5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+
+# Refit model with new Independent Variables
+X_opt = X[:, [0,3,5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
+
+# Refit model with new Independent Variables
+X_opt = X[:, [0,3]]
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()
