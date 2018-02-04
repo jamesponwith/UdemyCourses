@@ -16,7 +16,7 @@ import pandas as pd
 # Importing the dataset
 dataset = pd.read_csv('Position_Salaries.csv')
 X = dataset.iloc[:, 1:2].values
-y = dataset.iloc[:, 2].values
+y = dataset.iloc[:, 2:3].values
 
 # Splitting the dataset into the Training set and Test set
 """from sklearn.cross_validation import train_test_split
@@ -28,7 +28,7 @@ sc_X = StandardScaler()
 sc_y = StandardScaler()
 
 #Scale X and y
-X = sc_X.fit_transform(X).reshape(-1, 1)
+X = sc_X.fit_transform(X) # .reshape(-1, 1)
 y = sc_y.fit_transform(y)
 
 # Fitting the SVR Model to the dataset
