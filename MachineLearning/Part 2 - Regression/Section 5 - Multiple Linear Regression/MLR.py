@@ -89,12 +89,18 @@ X_opt = X[:, [0,3]]
 regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
 regressor_OLS.summary()
 
+
+
 """
 Endnotes
 
 """
+
+
+
 """
 
+Automatic Implementation of Backward Elimination Using P-values.
 Automatic Implementation of Backward Elimination Using P-values.
 
 """

@@ -6,6 +6,8 @@ Created on Fri Feb  2 17:33:42 2018
 @author: jponwith
 """
 
+Import numpy as nm
+
 """
 
 Automatic Implementation of Backward Elimination Using P-values.
