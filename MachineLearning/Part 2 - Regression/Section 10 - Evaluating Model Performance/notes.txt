@@ -1,3 +1,5 @@
+---R-Squared---
+
 SSres = SUM (Yi - Yi^)^2
 SStot = SUM (Yi - Yavg)^2
 
@@ -8,8 +10,22 @@ While SSres and SStot become smaller R^2 is inching towards a value of 1 which i
 
 
 
+---Adjusted R-Squared---
 
+R^2 - Goodness of fit (greater the better)
 
+Problem with this - when you add more variables to your model
+
+if you add another variable will never decrease R^2
+
+Adujusted R^2:
+
+1 - (1 - R^2)(n-1 / n - p - 1)
+
+p - number of regressors
+n - sample size
+
+Adjusted R squared penalizes the model for variables that do not help. (Penalized for each added varaible but balanced out if variable is helping model)
 
 
 
