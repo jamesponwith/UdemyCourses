@@ -3,7 +3,13 @@ SStot = SUM (Yi - Yavg)^2
 
 R^2 = 1 - ( SSres / SStot)
 
-The goal is to minimize R^2 because this represents the best fit line meaning that there is the minimum amount of distance between the data points and the line. 
+The goal is to minimize SSres and SStot  because this represents the best fit line meaning that there is the minimum amount of distance between the data points and the line. 
+While SSres and SStot become smaller R^2 is inching towards a value of 1 which is ideal but never happens.
+
+
+
+
+
 
 
 
