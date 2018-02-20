@@ -1,0 +1,9 @@
+SSres = SUM (Yi - Yi^)^2
+SStot = SUM (Yi - Yavg)^2
+
+R^2 = 1 - ( SSres / SStot)
+
+
+
+
+
