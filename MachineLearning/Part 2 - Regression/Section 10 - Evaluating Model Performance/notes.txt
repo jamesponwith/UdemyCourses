@@ -36,3 +36,19 @@ at adjusted R squared to decide if our model is getting better or worse.
 
 Remember: Adjusted R Squared indicates how strong your model is by being as close to 1 as possible
 
+
+---
+
+Interpreting Linear Regression Coefficients 
+
+Positive - Correlated with dependent variable 
+Negitive - Inversely correleated with dependent variable
+
+Alwyas say magnatude in terms of units of the dependent variable
+
+The per unit trick -- express the signifigance of the variables in terms of
+per unit. For example, the multilinear regression model says that R&D has a
+coefficient of (7.99 - 01) which can be interpretted to for every dollar extra
+spent on R&D, an additional .79 cents will be added to profit.
+
+
