@@ -5,10 +5,10 @@ SStot = SUM (Yi - Yavg)^2
 
 R^2 = 1 - ( SSres / SStot)
 
-The goal is to minimize SSres and SStot  because this represents the best fit line meaning that there is the minimum amount of distance between the data points and the line. 
+The goal is to minimize SSres and SStot  because this represents the best fit line meaning that there 
+is the minimum amount of distance between the data points and the line. 
+
 While SSres and SStot become smaller R^2 is inching towards a value of 1 which is ideal but never happens.
-
-
 
 ---Adjusted R-Squared---
 
@@ -25,7 +25,14 @@ Adujusted R^2:
 p - number of regressors
 n - sample size
 
-Adjusted R squared penalizes the model for variables that do not help. (Penalized for each added varaible but balanced out if variable is helping model)
+Adjusted R squared penalizes the model for variables that do not help. 
+(Penalized for each added varaible but balanced out if variable is helping model)
 
+---
 
+When looking at the statistics for a model (Like when we did with the backwards elimination process), 
+even if the signifigance level falls slightly short of the 0.05 limit we imposed, we must also look 
+at adjusted R squared to decide if our model is getting better or worse.
+
+Remember: Adjusted R Squared indicates how strong your model is by being as close to 1 as possible
 
