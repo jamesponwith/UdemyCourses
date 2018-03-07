@@ -1,0 +1,8 @@
+Introducting Phat and Yhat.
+
+Phat - a probability that we have calculated.
+
+Yhat - the prediction based on the logistic curve.
+	   If the data point is less than a 50% probability it will be plotted
+	   down. If the data point is sitting higher than the 50% line than the
+	   data point is plotted upwards. 
