@@ -1,0 +1,103 @@
+- The Neuron
+- The Activation Function
+- How do NNetworks work?
+- How do they learn
+- Gradient Descent
+- Stochastic Gradient Descent
+- Backpropation
+
+The Neuron
+----------
+
+Dendrite - Receptor 
+Axon - transmitter
+*of signal
+
+input value --> |
+input value --> | --> Neuron --> output value
+input value --> | 
+
+input value - independent variables
+Have to standardize or normalize the input values
+
+Weights get assigned to arrows of input values. The neuron takes a weighted
+average of the input values and applys an activation funtion to data.
+
+
+
+The Activation Function
+----------------------
+
+x-axis - weighted average numbers
+y-axis - range from 0-1
+
+Threshold Function - 
+step wise, ridgid fucntion
+
+Sigmoid function, S curve (smooth)
+
+Rectifier - 0 until 0 on x-axis then gradually increases. One of the most
+popular in artificial neural networks.
+
+Hperbolic Tangent (tahh)
+y-axis - -1 to 1
+
+
+
+How do NNs work?
+----------------
+
+**pretend this seciton's network is already trained**
+
+Input Layer		   Weight	Hidden Layer 		   Output Layer
+
+1 Area (feet^2)		--->		[1,3] 		--->	--------
+2 bedrooms			--->		[1,2,4] 	--->	|Price |
+3 distance to city	--->		[1,2,3,4]	--->	|Here  |
+4 age 				---> 		[4] 		--->	--------
+
+
+
+How do NNs Learn?
+-----------------
+
+Minimize cost funtion
+
+Input values pass their weighted values to preceptor and output Y(^) then Y(^)
+is compared to actual Y then cost function is passed back into model to update
+the weights. 
+
+C = (1/2)(Y^ - Y)^2
+
+
+
+Gradient Descent
+----------------
+
+input --> apply weight --> produce output --> compare output to actual value
+--> adjust weights
+
+How to minimize cost function?
+
+- Brute Force 
+	Curse of Dimensionality
+		impossible to brute force because of massive number of combinations
+- Gradient Descent
+	Start top left of perabola, differentiate the point to find slope to
+	decide which way to shift along curve.
+
+
+
+Stochastic Gradient Descent
+---------------------------
+
+what if the funcitno is convex? not a single parabala?
+	finding a local min but never find global min
+
+Gradient approach - run all 8 rows of data THEN update weights
+
+Stochastic Gradient approach - run one row of data at a time, THEN update
+							   weights between each round of data.	
+
+
+

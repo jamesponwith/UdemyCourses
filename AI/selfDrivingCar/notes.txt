@@ -1,0 +1,80 @@
+Bellman Equation:
+
+s - State
+a - Action an agent can take
+R - reward that an agent gets for entering certain state
+Y(Gamma) - discount factor, 
+
+V(s) = max(R(s,a) + YV(s'))
+   	  alpha			GammaV(s'))
+
+~ add number values based on the reward sqaure with a discount rate applied.
+Similar to the time value of money.
+
+
+
+Markov Decision Process (MDP):
+
+Markov Process - Moves upon until current state does not matter. 
+
+MDPs - math framework for modeling decision making situations where outcomes
+are partly random and partly under the control of a decision maker.
+
+V(s) = Max( R(s,a) + Y*Sigma(P(s,a,s')V(s')))
+	  alpha			gamma
+
+
+
+"Living Penalty"
+
+at the momemnt we only get rewards at the end, we need rewards in situations
+like killing someone in doom. Now we will implement a small negitive reward
+for each square.
+
+A living penalty of -2.0 will cause the AI to try and end the game as soon as
+possible to minimize the negitive total return.
+
+
+
+Q-Learning Intuition:	
+
+Wheres the Q?
+
+Q stands for quality
+Q(s0,a1), Q(s0,a2), Q(s0,a3), ...
+
+Q(s,a) = R(s,a) + Y * Sigma(P(s,a,s')max(Q(s',a')))
+				Gamma   s'			  a'
+
+
+
+Temporal Difference
+
+Heart and sole of Q-Learning
+Easier Version:	Q(s,a) = R(s,a) + Y * maxQ(s',a')
+								gamma a'
+
+TD(a,s) = R(s,a) + Y * maxQ(s',a') - Q(s,a)
+				 Gamma  a'
+
+Now add a time factor and alpha for how quickly the algorithm is learning
+
+TD(a,s) = R(s,a) + Y * maxQ(s',a') - Qt-1(s,a)
+				 Gamma  a'
+				 
+Qt(s,a) = Qt-1(s,a) + AlphaTDt(a,s)				 								
+
+Most Complex:
+
+Qt(s,a) = Qt-1(s,a) + Alpha(R(a,s) + Y * maxQ(s',a') - Qt-1(s,a))				 								
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	  
