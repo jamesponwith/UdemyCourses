@@ -31,6 +31,8 @@ The Activation Function
 x-axis - weighted average numbers
 y-axis - range from 0-1
 
+Types of activation functions:
+
 Threshold Function - 
 step wise, ridgid fucntion
 
@@ -49,6 +51,7 @@ How do NNs work?
 
 **pretend this seciton's network is already trained**
 
+Node Graph
 Input Layer		   Weight	Hidden Layer 		   Output Layer
 
 1 Area (feet^2)		--->		[1,3] 		--->	--------
@@ -56,7 +59,8 @@ Input Layer		   Weight	Hidden Layer 		   Output Layer
 3 distance to city	--->		[1,2,3,4]	--->	|Here  |
 4 age 				---> 		[4] 		--->	--------
 
-
+The associated marticies under the, "Hidden Layer" section, represents the
+nodes that are visited to produce the desired prediction.
 
 How do NNs Learn?
 -----------------
